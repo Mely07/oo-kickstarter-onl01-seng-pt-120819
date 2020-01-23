@@ -6,10 +6,9 @@ class Project
     @backers = []
   end
   
-  def add_backer(backer) 
+  def add_backer(backer) #backer not name
     @backers << backer
-    backer.backed_projects << self   
+    backer.backed_projects << self #access the backer backed_projects array directly and add this backer to that  
   end
     
 end
-
